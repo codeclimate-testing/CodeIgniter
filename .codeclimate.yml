@@ -1,18 +1,13 @@
 ---
 engines:
-  phpcodesniffer:
-    enabled: true
-  phpmd:
-    enabled: true
   duplication:
+    enabled: false
+  structure:
+    enabled: false
+  sonar-php:
     enabled: true
-    config:
-      languages:
-      - php
-ratings:
-  paths:
-  - "**.php"
-  - "**.module"
-  - "**.inc"
 exclude_paths:
-- tests/**/*
+  - build/
+  - fixtures/
+  - gradle/
+  - .gradle/
